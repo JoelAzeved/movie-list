@@ -13,9 +13,9 @@ const Home = () => {
     const getTopRatedMovies = async (url) => {
         const res = await fetch(url)
         const data = await res.json()
-
+        console.log(data)
         setTopMovies(data.results)
-
+        
     }
 
     useEffect(() => {
@@ -29,14 +29,12 @@ const Home = () => {
             <Navbar />
             <h2 className="title"> 20 melhores filmes: </h2>
             <div className="movies_container">
-            {topMovies.length > 0 && topMovies.map((movie)=>(
-                <MovieCard 
-                movie={movie}
-                key={movie.id}
-                />
-            
-            ))}
-                
+                {topMovies.length > 0 && topMovies.map((movie) => (
+                    <MovieCard
+                        movie={movie}
+                        key={movie.id}
+                    />
+                ))}
             </div>
         </div>
     )

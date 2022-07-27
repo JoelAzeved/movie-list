@@ -3,15 +3,16 @@ import { useNavigate } from 'react-router-dom'
 import './Form.css'
 import { useState } from 'react'
 
+
 const Form = () => {
   const [search, setSearch] = useState("")
   const navigate = useNavigate()
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    console.log(search)
+   
 
-    if(!search) return
+    if(!search) return alert("Digite algo para busca")
 
     navigate(`/search?q=${search}`)
     setSearch("")

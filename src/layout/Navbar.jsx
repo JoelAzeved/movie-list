@@ -13,7 +13,6 @@ const Navbar = () => {
                 <h2>
                     <Link to='/'><BiCameraMovie/> Movies </Link>
                 </h2>
-
                 <Form />
             </nav>
 
