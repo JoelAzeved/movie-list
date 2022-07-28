@@ -5,6 +5,7 @@
     font-size: 2.5rem;
     text-align: center;
     margin: 2rem 0 1rem;
+    
 }
 
 .title .query_text{
@@ -21,7 +22,7 @@
 }
 
 .movies_container div{
-    width: 30%;
+    width: 25%;
     color: #FFF;
     margin-bottom: 2.5rem;
     display: flex;
@@ -37,14 +38,14 @@
 
 }
 
-.movies_container div p{
+.movies_container div p {
     margin-bottom: 2rem;
+    
 }
 
 .movies_container div h2 {
     margin-bottom:  2rem;
-    max-width: 100%;
-    font-size: 1.5rem;
+    
 }
 
 
@@ -67,6 +68,15 @@
 .movies_container div a:hover {
     background-color: transparent;
     color: #ffe37d;
+}
+
+@media(max-width: 580px) {
+    .movies_container div h2 {
+        font-size: 0.9rem;
+    }
+    .movies_container div a {
+        font-size: 0.8rem;
+    }
 }
 
 
